@@ -1,0 +1,8 @@
+<div class="face-snap-card" [ngClass]="{snapped: buttonSnap === 'je n\'aime plus'}">
+    <h2>{{ faceSnap.title | uppercase}}</h2>
+    <p>Mis en ligne {{ faceSnap.createdDate | date: 'le dd MMMM yyyy, à HH:mm'}}</p>
+    <div class="circle">
+      <img [src]=faceSnap.imageUrl>
+    </div>
+  <button (click)="onViewFaceSnap()">View</button>
+</div>
